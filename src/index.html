@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/main.css" rel="stylesheet" />
+    <title>Pasley Hill LLC</title>
+  </head>
+  <body>
+    <main>
+      <div class="bg-gray-50">
+        <div
+          class="hidden sm:absolute sm:inset-y-0 sm:block sm:h-full sm:w-full"
+          aria-hidden="true"
+        >
+          <div class="relative mx-auto h-full max-w-7xl">
+            <svg
+              class="absolute right-full translate-y-1/4 translate-x-1/4 transform lg:translate-x-1/2"
+              width="404"
+              height="784"
+              fill="none"
+              viewBox="0 0 404 784"
+            >
+              <defs>
+                <pattern
+                  id="f210dbf6-a58d-4871-961e-36d5016a0f49"
+                  x="0"
+                  y="0"
+                  width="20"
+                  height="20"
+                  patternUnits="userSpaceOnUse"
+                >
+                  <rect
+                    x="0"
+                    y="0"
+                    width="4"
+                    height="4"
+                    class="text-gray-200"
+                    fill="currentColor"
+                  />
+                </pattern>
+              </defs>
+              <rect
+                width="404"
+                height="784"
+                fill="url(#f210dbf6-a58d-4871-961e-36d5016a0f49)"
+              />
+            </svg>
+            <svg
+              class="absolute left-full -translate-y-3/4 -translate-x-1/4 transform md:-translate-y-1/2 lg:-translate-x-1/2"
+              width="404"
+              height="784"
+              fill="none"
+              viewBox="0 0 404 784"
+            >
+              <defs>
+                <pattern
+                  id="5d0dd344-b041-4d26-bec4-8d33ea57ec9b"
+                  x="0"
+                  y="0"
+                  width="20"
+                  height="20"
+                  patternUnits="userSpaceOnUse"
+                >
+                  <rect
+                    x="0"
+                    y="0"
+                    width="4"
+                    height="4"
+                    class="text-gray-200"
+                    fill="currentColor"
+                  />
+                </pattern>
+              </defs>
+              <rect
+                width="404"
+                height="784"
+                fill="url(#5d0dd344-b041-4d26-bec4-8d33ea57ec9b)"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <div class="pt-6 pb-16 sm:pb-24">
+          <div class="">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6">
+              <nav
+                class="relative flex items-center justify-between sm:h-10 md:justify-center"
+                aria-label="Global"
+              >
+                <div
+                  class="flex flex-1 items-center md:absolute md:inset-y-0 md:left-0"
+                >
+                  <div
+                    class="flex w-full items-center justify-between md:w-auto"
+                  >
+                    <a href="#">
+                      <span class="sr-only">Pasley Hill LLC</span>
+                      <img
+                        class="h-8 w-auto sm:h-10"
+                        src="ph_logo_2.png"
+                        alt=""
+                      />
+                    </a>
+                    <div class="-mr-2 flex items-center md:hidden">
+                      <button
+                        type="button"
+                        class="inline-flex items-center justify-center rounded-md bg-gray-50 p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-500"
+                        aria-expanded="false"
+                        id="open-menu-button"
+                      >
+                        <span class="sr-only">Open main menu</span>
+                        <!-- Heroicon name: outline/bars-3 -->
+                        <svg
+                          class="h-6 w-6"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="hidden md:flex md:space-x-10" id="desk-menu">
+                  <a
+                    href="#"
+                    class="font-medium text-gray-500 hover:text-gray-900"
+                    data-elem="our-team"
+                    >Our Team</a
+                  >
+
+                  <a
+                    href="#"
+                    class="font-medium text-gray-500 hover:text-gray-900"
+                    data-elem="past-projects"
+                    >Past Projects</a
+                  >
+
+                  <a
+                    href="#"
+                    class="font-medium text-gray-500 hover:text-gray-900"
+                    data-elem="contact-us"
+                    >Contact Us</a
+                  >
+                </div>
+              </nav>
+            </div>
+
+            <!--
+                  Mobile menu, show/hide based on menu open state.
+          
+                  Entering: "duration-150 ease-out"
+                    From: "opacity-0 scale-95"
+                    To: "opacity-100 scale-100"
+                  Leaving: "duration-100 ease-in"
+                    From: "opacity-100 scale-100"
+                    To: "opacity-0 scale-95"
+                -->
+            <div
+              id="mobile-menu"
+              class="absolute inset-x-0 top-0 z-10 origin-top-right transform p-2 transition duration-150 ease-out invisible"
+            >
+              <div
+                class="overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-black ring-opacity-5"
+              >
+                <div class="flex items-center justify-between px-5 pt-4">
+                  <div>
+                    <img class="h-8 w-auto" src="ph_logo_2.png" alt="" />
+                  </div>
+                  <div class="-mr-2">
+                    <button
+                      id="close-button"
+                      type="button"
+                      class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-500"
+                    >
+                      <span class="sr-only">Close menu</span>
+                      <!-- Heroicon name: outline/x-mark -->
+                      <svg
+                        class="h-6 w-6"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M6 18L18 6M6 6l12 12"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="px-2 pt-2 pb-3" id="mobile-menu">
+                  <a
+                    href="#"
+                    data-elem="our-team"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900"
+                    >Our Team</a
+                  >
+
+                  <a
+                    data-elem="past-projects"
+                    href="#"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900"
+                    >Past Projects</a
+                  >
+
+                  <a
+                    href="#"
+                    data-elem="contact-us"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900"
+                    >Contact Us</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <main class="relative mx-auto mt-16 max-w-7xl px-4 sm:mt-24">
+            <section class="text-center x-invisible">
+              <h1
+                class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl"
+              >
+                <span class="block xl:inline text-cyan-500">Pasley Hill</span>
+                <span class="block text-cyan-800 xl:inline"
+                  >building better software faster.</span
+                >
+              </h1>
+
+              <div
+                class="mx-auto mt-5 max-w-md sm:flex sm:justify-center md:mt-8"
+              >
+                <div class="rounded-md shadow">
+                  <a
+                    href="#"
+                    id="get-a-quote"
+                    data-elem="contact-us"
+                    class="flex w-full items-center justify-center rounded-md border border-transparent bg-cyan-600 px-8 py-3 text-base font-medium text-white hover:bg-cyan-700 md:py-4 md:px-10 md:text-lg"
+                    >Get a quote</a
+                  >
+                </div>
+              </div>
+            </section>
+
+            <section class="bg-white py-12 mt-10 x-invisible">
+              <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="lg:text-center">
+                  <p
+                    class="mt-2 text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl"
+                  >
+                    We build your internal or customer facing software faster
+                  </p>
+                  <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                    Whether you are building a new product, seeking to optimize
+                    your business procedures, or create ways to gain insights on
+                    your businesses data, we can do it faster
+                  </p>
+                </div>
+
+                <div class="mt-10">
+                  <dl
+                    class="space-y-10 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 md:space-y-0"
+                  >
+                    <div class="relative">
+                      <dt>
+                        <div
+                          class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-cyan-500 text-white"
+                        >
+                          <!-- Heroicon name: outline/globe-alt -->
+                          <svg
+                            class="h-6 w-6"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"
+                            />
+                          </svg>
+                        </div>
+                        <p
+                          class="ml-16 text-lg font-medium leading-6 text-gray-900"
+                        >
+                          Web Development
+                        </p>
+                      </dt>
+                      <dd class="mt-2 ml-16 text-base text-gray-500">
+                        Let Pasley Hill create your website or web-application
+                        to service or your customers or internal needs via
+                        web-browsers. We can do everything from a static HTML
+                        website, to a SPA (Single Page App).
+                      </dd>
+                    </div>
+
+                    <div class="relative">
+                      <dt>
+                        <div
+                          class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-cyan-500 text-white"
+                        >
+                          <!-- Heroicon name: outline/scale -->
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="w-6 h-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
+                            />
+                          </svg>
+                        </div>
+                        <p
+                          class="ml-16 text-lg font-medium leading-6 text-gray-900"
+                        >
+                          Android or iOS Development
+                        </p>
+                      </dt>
+                      <dd class="mt-2 ml-16 text-base text-gray-500">
+                        Let us build your latest idea or app on iOS, Android, or
+                        both. We keep up with all cross-platform development
+                        practices and frameworks, and even native development.
+                      </dd>
+                    </div>
+
+                    <div class="relative">
+                      <dt>
+                        <div
+                          class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-cyan-500 text-white"
+                        >
+                          <!-- Heroicon name: outline/bolt -->
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="w-6 h-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25"
+                            />
+                          </svg>
+                        </div>
+                        <p
+                          class="ml-16 text-lg font-medium leading-6 text-gray-900"
+                        >
+                          Desktop Application Development for Mac or PC
+                        </p>
+                      </dt>
+                      <dd class="mt-2 ml-16 text-base text-gray-500">
+                        Do you need a desktop application built that can run on
+                        any platform? We've got you covered here. We're experts
+                        in cross-platform deskstop application development, and
+                        can also implement applications natively as well!
+                      </dd>
+                    </div>
+
+                    <div class="relative">
+                      <dt>
+                        <div
+                          class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-cyan-500 text-white"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="w-6 h-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 011.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204.165.397.505.71.93.78l.893.15c.543.09.94.56.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.893.149c-.425.07-.765.383-.93.78-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 01-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107-.397.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 01-.12-1.45l.527-.737c.25-.35.273-.806.108-1.204-.165-.397-.505-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78.165-.398.143-.854-.107-1.204l-.527-.738a1.125 1.125 0 01.12-1.45l.773-.773a1.125 1.125 0 011.45-.12l.737.527c.35.25.807.272 1.204.107.397-.165.71-.505.78-.929l.15-.894z"
+                            />
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                            />
+                          </svg>
+                        </div>
+                        <p
+                          class="ml-16 text-lg font-medium leading-6 text-gray-900"
+                        >
+                          Business Automation and App Integrations
+                        </p>
+                      </dt>
+                      <dd class="mt-2 ml-16 text-base text-gray-500">
+                        Do you need SalesForce and QuickBooks to inform
+                        eachother? Automated emails sent when you get certain
+                        messages and automated invoicing? A way to automate your
+                        work-force? Let us help and show you just how much more
+                        efficient your business can be.
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+            </section>
+
+            <section class="bg-white mt-10 mb-2 x-invisible" id="our-team">
+              <div
+                class="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8 lg:py-24"
+              >
+                <div
+                  class="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0"
+                >
+                  <div class="space-y-5 sm:space-y-4">
+                    <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
+                      Our Team
+                    </h2>
+                    <p class="text-xl text-gray-500">
+                      We are a small team of highly skilled software engineers
+                      and systems design experts. Also, we all love video games.
+                    </p>
+                  </div>
+                  <div class="lg:col-span-2">
+                    <ul
+                      role="list"
+                      class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:gap-x-8"
+                    >
+                      <li>
+                        <div class="space-y-4">
+                          <div class="aspect-w-3 aspect-h-2">
+                            <img
+                              class="rounded-lg object-cover shadow-lg"
+                              src="chill.jpeg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="space-y-1 text-lg font-medium leading-6">
+                            <h3>Christopher Hill</h3>
+                            <p class="text-cyan-600">
+                              President and Lead Engineer
+                            </p>
+                          </div>
+                          <div class="text-lg">
+                            <p class="text-gray-500">
+                              With over 10 years in software engineering, and 15
+                              years in general IT management, Christopher knows
+                              just what is possible for your business needs.
+                            </p>
+                          </div>
+
+                          <ul role="list" class="flex space-x-5">
+                            <li>
+                              <a
+                                href="https://github.com/aiur100"
+                                class="text-gray-400 hover:text-gray-500"
+                              >
+                                <span class="sr-only">Github</span>
+                                <svg
+                                  class="h-5 w-5"
+                                  fill="currentColor"
+                                  viewBox="0 0 40 39"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <g
+                                    id="For-Developer"
+                                    fill="none"
+                                    fill-rule="evenodd"
+                                  >
+                                    <g
+                                      id="SocialGithubSvg_Artboard"
+                                      transform="translate(-756 -245)"
+                                    >
+                                      <g
+                                        id="SocialGithubSvg_SocialIcon_Github_Plain"
+                                        transform="translate(752 240)"
+                                      >
+                                        <path
+                                          id="Rectangle-Copy"
+                                          d="M0 0h48v48H0z"
+                                        ></path>
+                                        <path
+                                          d="M23.998 5C12.955 5 4 13.951 4 24.994c0 8.834 5.73 16.327 13.678 18.97 1 .185 1.365-.433 1.365-.963 0-.474-.017-1.732-.027-3.4-5.563 1.208-6.737-2.68-6.737-2.68-.91-2.31-2.221-2.925-2.221-2.925-1.816-1.24.137-1.215.137-1.215 2.008.14 3.064 2.06 3.064 2.06 1.784 3.055 4.681 2.173 5.82 1.661.182-1.291.7-2.172 1.27-2.672-4.44-.504-9.11-2.22-9.11-9.882 0-2.182.78-3.968 2.059-5.365-.206-.505-.893-2.539.196-5.29 0 0 1.679-.538 5.5 2.049A19.162 19.162 0 0 1 24 14.668c1.699.009 3.41.23 5.007.674 3.818-2.587 5.494-2.05 5.494-2.05 1.091 2.752.405 4.786.2 5.291 1.282 1.397 2.055 3.183 2.055 5.365 0 7.681-4.676 9.371-9.13 9.866.716.617 1.356 1.837 1.356 3.703 0 2.672-.025 4.829-.025 5.484 0 .535.361 1.157 1.376.962C38.274 41.313 44 33.825 44 24.994 44 13.951 35.045 5 23.998 5"
+                                          id="Fill-4"
+                                          fill="#161514"
+                                        ></path>
+                                      </g>
+                                    </g>
+                                  </g>
+                                </svg>
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.linkedin.com/in/christopher-hill-5ab483111/"
+                                class="text-gray-400 hover:text-gray-500"
+                              >
+                                <span class="sr-only">LinkedIn</span>
+                                <svg
+                                  class="h-5 w-5"
+                                  viewBox="0 0 20 20"
+                                  aria-hidden="true"
+                                >
+                                  <path
+                                    fill-rule="evenodd"
+                                    d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
+                                    clip-rule="evenodd"
+                                  />
+                                </svg>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="space-y-4">
+                          <div class="aspect-w-3 aspect-h-2">
+                            <img
+                              class="rounded-lg object-cover shadow-lg"
+                              src="nick.jpeg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="space-y-1 text-lg font-medium leading-6">
+                            <h3>Nicholas Ricciuti</h3>
+                            <p class="text-cyan-600">Full-Stack Developer</p>
+                          </div>
+                          <div class="text-lg">
+                            <p class="text-gray-500">
+                              Nick brings 8 years of experience as a polygot
+                              programmer to our team. Engineering efficient
+                              systems, intuitive front-end user-experiences, and
+                              a high attention to detail.
+                            </p>
+                          </div>
+
+                          <ul role="list" class="flex space-x-5">
+                            <li>
+                              <a
+                                href="https://github.com/rishooty"
+                                class="text-gray-400 hover:text-gray-500"
+                              >
+                                <span class="sr-only">Github</span>
+                                <svg
+                                  class="h-5 w-5"
+                                  fill="currentColor"
+                                  viewBox="0 0 40 39"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <g
+                                    id="For-Developer"
+                                    fill="none"
+                                    fill-rule="evenodd"
+                                  >
+                                    <g
+                                      id="SocialGithubSvg_Artboard"
+                                      transform="translate(-756 -245)"
+                                    >
+                                      <g
+                                        id="SocialGithubSvg_SocialIcon_Github_Plain"
+                                        transform="translate(752 240)"
+                                      >
+                                        <path
+                                          id="Rectangle-Copy"
+                                          d="M0 0h48v48H0z"
+                                        ></path>
+                                        <path
+                                          d="M23.998 5C12.955 5 4 13.951 4 24.994c0 8.834 5.73 16.327 13.678 18.97 1 .185 1.365-.433 1.365-.963 0-.474-.017-1.732-.027-3.4-5.563 1.208-6.737-2.68-6.737-2.68-.91-2.31-2.221-2.925-2.221-2.925-1.816-1.24.137-1.215.137-1.215 2.008.14 3.064 2.06 3.064 2.06 1.784 3.055 4.681 2.173 5.82 1.661.182-1.291.7-2.172 1.27-2.672-4.44-.504-9.11-2.22-9.11-9.882 0-2.182.78-3.968 2.059-5.365-.206-.505-.893-2.539.196-5.29 0 0 1.679-.538 5.5 2.049A19.162 19.162 0 0 1 24 14.668c1.699.009 3.41.23 5.007.674 3.818-2.587 5.494-2.05 5.494-2.05 1.091 2.752.405 4.786.2 5.291 1.282 1.397 2.055 3.183 2.055 5.365 0 7.681-4.676 9.371-9.13 9.866.716.617 1.356 1.837 1.356 3.703 0 2.672-.025 4.829-.025 5.484 0 .535.361 1.157 1.376.962C38.274 41.313 44 33.825 44 24.994 44 13.951 35.045 5 23.998 5"
+                                          id="Fill-4"
+                                          fill="#161514"
+                                        ></path>
+                                      </g>
+                                    </g>
+                                  </g>
+                                </svg>
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.linkedin.com/in/rishooty"
+                                class="text-gray-400 hover:text-gray-500"
+                              >
+                                <span class="sr-only">LinkedIn</span>
+                                <svg
+                                  class="h-5 w-5"
+                                  viewBox="0 0 20 20"
+                                  aria-hidden="true"
+                                >
+                                  <path
+                                    fill-rule="evenodd"
+                                    d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
+                                    clip-rule="evenodd"
+                                  />
+                                </svg>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="space-y-4">
+                          <div class="aspect-w-3 aspect-h-2">
+                            <img
+                              class="rounded-lg object-cover shadow-lg"
+                              src="camilo.jpeg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="space-y-1 text-lg font-medium leading-6">
+                            <h3>Camilo Rios</h3>
+                            <p class="text-cyan-600">
+                              External Consultant for Serverless and Systems
+                              Architecture
+                            </p>
+                          </div>
+                          <div class="text-lg">
+                            <p class="text-gray-500">
+                              Camilo is another polygot programmer who has over
+                              10 years of experience, and 5 in the serverless
+                              world. He is a masterful systems designer, and
+                              full-stack developer.
+                            </p>
+                          </div>
+
+                          <ul role="list" class="flex space-x-5">
+                            <li>
+                              <a
+                                href="https://github.com/camiloriosf"
+                                class="text-gray-400 hover:text-gray-500"
+                              >
+                                <span class="sr-only">Github</span>
+                                <svg
+                                  class="h-5 w-5"
+                                  fill="currentColor"
+                                  viewBox="0 0 40 39"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <g
+                                    id="For-Developer"
+                                    fill="none"
+                                    fill-rule="evenodd"
+                                  >
+                                    <g
+                                      id="SocialGithubSvg_Artboard"
+                                      transform="translate(-756 -245)"
+                                    >
+                                      <g
+                                        id="SocialGithubSvg_SocialIcon_Github_Plain"
+                                        transform="translate(752 240)"
+                                      >
+                                        <path
+                                          id="Rectangle-Copy"
+                                          d="M0 0h48v48H0z"
+                                        ></path>
+                                        <path
+                                          d="M23.998 5C12.955 5 4 13.951 4 24.994c0 8.834 5.73 16.327 13.678 18.97 1 .185 1.365-.433 1.365-.963 0-.474-.017-1.732-.027-3.4-5.563 1.208-6.737-2.68-6.737-2.68-.91-2.31-2.221-2.925-2.221-2.925-1.816-1.24.137-1.215.137-1.215 2.008.14 3.064 2.06 3.064 2.06 1.784 3.055 4.681 2.173 5.82 1.661.182-1.291.7-2.172 1.27-2.672-4.44-.504-9.11-2.22-9.11-9.882 0-2.182.78-3.968 2.059-5.365-.206-.505-.893-2.539.196-5.29 0 0 1.679-.538 5.5 2.049A19.162 19.162 0 0 1 24 14.668c1.699.009 3.41.23 5.007.674 3.818-2.587 5.494-2.05 5.494-2.05 1.091 2.752.405 4.786.2 5.291 1.282 1.397 2.055 3.183 2.055 5.365 0 7.681-4.676 9.371-9.13 9.866.716.617 1.356 1.837 1.356 3.703 0 2.672-.025 4.829-.025 5.484 0 .535.361 1.157 1.376.962C38.274 41.313 44 33.825 44 24.994 44 13.951 35.045 5 23.998 5"
+                                          id="Fill-4"
+                                          fill="#161514"
+                                        ></path>
+                                      </g>
+                                    </g>
+                                  </g>
+                                </svg>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+
+                      <!-- More people... -->
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="bg-cyan-600 mt-10 x-invisible" id="past-projects">
+              <div
+                class="mx-auto max-w-4xl px-1 py-1 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:px-8 lg:pt-5"
+              >
+                <h2 class="text-3xl font-bold tracking-tight text-white">
+                  Past Projects
+                </h2>
+                <p class="mt-4 max-w-3xl text-lg text-cyan-200">
+                  The software world can help businesses optimize and focus on
+                  the core of what they do, and we help companies to become a
+                  part of that world. Here are a few things we've built that
+                  have gone on to become foundational to the growth of the
+                  businesses that hired us.
+                </p>
+                <div
+                  class="mt-12 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-1 lg:mt-16 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16"
+                >
+                  <div>
+                    <div>
+                      <span
+                        class="items-center justify-center rounded-md bg-white bg-opacity-50"
+                      >
+                        <!-- Heroicon name: outline/inbox -->
+
+                        <img class="w-fit" src="therabody_logo.svg" alt="" />
+                      </span>
+                    </div>
+                    <div class="mt-6">
+                      <h3 class="text-lg font-medium text-white">
+                        <a href="https://www.rpsports.com/" target="_blank"
+                          >RP Sports</a
+                        >
+                      </h3>
+                      <em class="font-thin text-gray-100">Now Therabody</em>
+                      <p class="mt-2 text-base text-cyan-200">
+                        RP Sports (Therabody) needed a way to use Squarespace to
+                        retain design control over the site, along with their
+                        payments provider Authorize.net, which did not integrate
+                        into Squarespace. In addition, they needed special tax
+                        and shipping calculation systems. RP Sports hired Pasley
+                        Hill to create an efficient online sales pipeline by
+                        connecting a custom Squarespace e-commerce page and Zoho
+                        CRM.
+                      </p>
+                      <p class="mt-2">
+                        <a
+                          href="https://www.rpsports.com/"
+                          target="_blank"
+                          class="text-white mt-2"
+                          >www.rpsports.com</a
+                        >
+                      </p>
+                      <ul class="list-disc text-cyan-100 mt-4 ml-3">
+                        <li class="mt-1">
+                          Customized Tax calculation prior to online sale
+                        </li>
+                        <li class="mt-1">
+                          Orders from SquareSpace automatically create a Sales
+                          Order, Invoice, and if a customer does not exist, they
+                          are created
+                        </li>
+                        <li class="mt-1">
+                          Integrate discount codes, product descriptions, and
+                          product images managed in Zoho CRM, and automatically
+                          imported into custom SquareSpace Ecommerce page
+                        </li>
+                        <li class="mt-1">
+                          A shipping system that builds packaging manifest for
+                          the shipping department to follow, and precisely
+                          calculates shipping costs.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div>
+                      <span
+                        class="items-center justify-center rounded-md bg-white bg-opacity-50"
+                      >
+                        <!-- Heroicon name: outline/inbox -->
+
+                        <img class="w-2/3" src="pmd_logo.png" alt="" />
+                      </span>
+                    </div>
+                    <div class="mt-6">
+                      <h3 class="text-lg font-medium text-white">
+                        <a href="https://www.patriotmedical.com/"
+                          >Patriot Medical Distributors</a
+                        >
+                      </h3>
+                      <p class="mt-2 text-base text-cyan-200">
+                        Patriot Medical Distributors distributes Lymphedema
+                        treatment medical equipment through a network of
+                        partners, and they now rely on a medical system for
+                        order distribution built by Pasley Hill. Patriot Medical
+                        Distributors hired Pasley Hill to create a
+                        HIPPA-compliant order management web application for
+                        partners. Partners use the application to place and
+                        manage order delivery, distribution, and patient data.
+                      </p>
+                      <p class="mt-2">
+                        <a
+                          href="https://www.patriotmedical.com/"
+                          target="_blank"
+                          class="text-white mt-2"
+                          >www.patriotmedical.com</a
+                        >
+                      </p>
+                      <ul class="list-disc text-cyan-100 mt-4 ml-3">
+                        <li class="mt-1">
+                          HIPPA compliant web application for managing incoming
+                          orders
+                        </li>
+                        <li class="mt-1">
+                          Each partner administrator can only view their
+                          company's orders, statuses, and manage them.
+                        </li>
+                        <li class="mt-1">
+                          Users get meaningful real time emails and
+                          notifications when orders have been updated.
+                        </li>
+                        <li class="mt-1">
+                          Insurance compliance paperwork is pre-filled with
+                          patient information and securely distributed.
+                        </li>
+                        <li class="mt-1">
+                          The shipping department is given an optimized
+                          interface that increases order distribution through
+                          the use of scanners, automation, and UPS shipping
+                          integration
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div>
+                      <span
+                        class="items-center justify-center rounded-md bg-white bg-opacity-50"
+                      >
+                        <!-- Heroicon name: outline/inbox -->
+
+                        <img class="w-80" src="bob-logo.png" alt="" />
+                      </span>
+                    </div>
+                    <div class="mt-6">
+                      <h3 class="text-lg font-medium text-white">
+                        <a href="https://www.bentonbetter.com"
+                          >Bent On Better</a
+                        >
+                      </h3>
+                      <p class="mt-2 text-base text-cyan-200">
+                        Bent-on-Better requested Pasley Hill build a
+                        mobile-optimized web application for a Scavenger Hunt
+                        event attended by gym members. The app was used by
+                        members on their phones while competing in a
+                        geography-based scavenger hunt where each team member
+                        would log in. They were to use the web app to navigate
+                        clues and submit photos and video evidence of scavenger
+                        hunt objectives. Those whose media is tallied and
+                        verified at the end, along with their completion time,
+                        would win.
+                      </p>
+                      <p class="mt-2">
+                        <a
+                          href="https://www.bentonbetter.com"
+                          target="_blank"
+                          class="text-white mt-2"
+                          >www.bentonbetter.com</a
+                        >
+                      </p>
+                      <ul class="list-disc text-cyan-100 mt-4 ml-3">
+                        <li class="mt-1">
+                          A single-page web application that would run on
+                          android or iPhone devices
+                        </li>
+                        <li class="mt-1">
+                          The app used the Google Maps API to show the users
+                          current location in relation to where clues were on
+                          the map. Users were alerted when they were no longer
+                          in the correct area.
+                        </li>
+                        <li class="mt-1">
+                          A Google Sheet managed the application as its primary
+                          data source of users, questions/clues, and finally,
+                          the media submissions by team members.
+                        </li>
+                        <li class="mt-1">
+                          The users would upload high-quality photos and videos
+                          through the application and that data is stored as a
+                          submission in the corresponding Google Sheet tab.
+                        </li>
+                        <li class="mt-1">
+                          The client projects seasonal usage, and no personally
+                          identifying information is stored; therefore, the user
+                          database is also in Google Sheets.
+                        </li>
+                        <li class="mt-1">
+                          The gym staff would use the public links of the photos
+                          and videos referenced by the application to verify who
+                          won.
+                        </li>
+                        <li class="mt-1">
+                          The Google Sheet data inform the application
+                          questions, and when Gym staff change questions, they
+                          would change the application view.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="bg-gray-100 x-invisible">
+              <div class="mx-auto max-w-7xl mt-10" id="contact-us">
+                <div class="relative bg-white shadow-xl">
+                  <h2 class="sr-only">Contact us</h2>
+
+                  <div class="grid grid-cols-1 lg:grid-cols-3">
+                    <!-- Contact information -->
+                    <div
+                      class="relative overflow-hidden bg-cyan-700 py-10 px-6 sm:px-10 xl:p-12"
+                    >
+                      <div
+                        class="pointer-events-none absolute inset-0 sm:hidden"
+                        aria-hidden="true"
+                      >
+                        <svg
+                          class="absolute inset-0 h-full w-full"
+                          width="343"
+                          height="388"
+                          viewBox="0 0 343 388"
+                          fill="none"
+                          preserveAspectRatio="xMidYMid slice"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M-99 461.107L608.107-246l707.103 707.107-707.103 707.103L-99 461.107z"
+                            fill="url(#linear1)"
+                            fill-opacity=".1"
+                          />
+                          <defs>
+                            <linearGradient
+                              id="linear1"
+                              x1="254.553"
+                              y1="107.554"
+                              x2="961.66"
+                              y2="814.66"
+                              gradientUnits="userSpaceOnUse"
+                            >
+                              <stop stop-color="#fff"></stop>
+                              <stop
+                                offset="1"
+                                stop-color="#fff"
+                                stop-opacity="0"
+                              ></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div
+                        class="pointer-events-none absolute top-0 right-0 bottom-0 hidden w-1/2 sm:block lg:hidden"
+                        aria-hidden="true"
+                      >
+                        <svg
+                          class="absolute inset-0 h-full w-full"
+                          width="359"
+                          height="339"
+                          viewBox="0 0 359 339"
+                          fill="none"
+                          preserveAspectRatio="xMidYMid slice"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M-161 382.107L546.107-325l707.103 707.107-707.103 707.103L-161 382.107z"
+                            fill="url(#linear2)"
+                            fill-opacity=".1"
+                          />
+                          <defs>
+                            <linearGradient
+                              id="linear2"
+                              x1="192.553"
+                              y1="28.553"
+                              x2="899.66"
+                              y2="735.66"
+                              gradientUnits="userSpaceOnUse"
+                            >
+                              <stop stop-color="#fff"></stop>
+                              <stop
+                                offset="1"
+                                stop-color="#fff"
+                                stop-opacity="0"
+                              ></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div
+                        class="pointer-events-none absolute top-0 right-0 bottom-0 hidden w-1/2 lg:block"
+                        aria-hidden="true"
+                      >
+                        <svg
+                          class="absolute inset-0 h-full w-full"
+                          width="160"
+                          height="678"
+                          viewBox="0 0 160 678"
+                          fill="none"
+                          preserveAspectRatio="xMidYMid slice"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M-161 679.107L546.107-28l707.103 707.107-707.103 707.103L-161 679.107z"
+                            fill="url(#linear3)"
+                            fill-opacity=".1"
+                          />
+                          <defs>
+                            <linearGradient
+                              id="linear3"
+                              x1="192.553"
+                              y1="325.553"
+                              x2="899.66"
+                              y2="1032.66"
+                              gradientUnits="userSpaceOnUse"
+                            >
+                              <stop stop-color="#fff"></stop>
+                              <stop
+                                offset="1"
+                                stop-color="#fff"
+                                stop-opacity="0"
+                              ></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <h3 class="text-lg font-medium text-white">
+                        Contact information
+                      </h3>
+                      <p class="mt-6 max-w-3xl text-base text-cyan-50">
+                        Reach out! Let's talk about your needs. We love to talk.
+                      </p>
+                      <dl class="mt-8 space-y-6">
+                        <dt><span class="sr-only">Phone number</span></dt>
+                        <dd class="flex text-base text-cyan-50">
+                          <!-- Heroicon name: outline/phone -->
+                          <svg
+                            class="h-6 w-6 flex-shrink-0 text-cyan-200"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+                            />
+                          </svg>
+                          <span class="ml-3">+1 (531) 263-8504</span>
+                        </dd>
+                        <dt><span class="sr-only">Email</span></dt>
+                        <dd class="flex text-base text-cyan-50">
+                          <!-- Heroicon name: outline/envelope -->
+                          <svg
+                            class="h-6 w-6 flex-shrink-0 text-cyan-200"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                            />
+                          </svg>
+                          <span class="ml-3">info@pasleyhill.com</span>
+                        </dd>
+                      </dl>
+                    </div>
+
+                    <!-- Contact form -->
+                    <div class="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
+                      <h3 class="text-lg font-medium text-gray-900">
+                        Send us a message
+                      </h3>
+                      <form
+                        action="#"
+                        method="POST"
+                        class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
+                      >
+                        <div>
+                          <label
+                            for="first-name"
+                            class="block text-sm font-medium text-gray-900"
+                            >First name</label
+                          >
+                          <div class="mt-1">
+                            <input
+                              type="text"
+                              name="first-name"
+                              id="first-name"
+                              autocomplete="given-name"
+                              class="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-cyan-500 focus:ring-cyan-500"
+                            />
+                          </div>
+                        </div>
+                        <div>
+                          <label
+                            for="last-name"
+                            class="block text-sm font-medium text-gray-900"
+                            >Last name</label
+                          >
+                          <div class="mt-1">
+                            <input
+                              type="text"
+                              name="last-name"
+                              id="last-name"
+                              autocomplete="family-name"
+                              class="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-cyan-500 focus:ring-cyan-500"
+                            />
+                          </div>
+                        </div>
+                        <div>
+                          <label
+                            for="email"
+                            class="block text-sm font-medium text-gray-900"
+                            >Email</label
+                          >
+                          <div class="mt-1">
+                            <input
+                              id="email"
+                              name="email"
+                              type="email"
+                              autocomplete="email"
+                              class="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-cyan-500 focus:ring-cyan-500"
+                            />
+                          </div>
+                        </div>
+                        <div>
+                          <div class="flex justify-between">
+                            <label
+                              for="phone"
+                              class="block text-sm font-medium text-gray-900"
+                              >Phone</label
+                            >
+                            <span
+                              id="phone-optional"
+                              class="text-sm text-gray-500"
+                              >Optional</span
+                            >
+                          </div>
+                          <div class="mt-1">
+                            <input
+                              type="text"
+                              name="phone"
+                              id="phone"
+                              autocomplete="tel"
+                              class="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-cyan-500 focus:ring-cyan-500"
+                              aria-describedby="phone-optional"
+                            />
+                          </div>
+                        </div>
+                        <div class="sm:col-span-2">
+                          <label
+                            for="subject"
+                            class="block text-sm font-medium text-gray-900"
+                            >Subject</label
+                          >
+                          <div class="mt-1">
+                            <input
+                              type="text"
+                              name="subject"
+                              id="subject"
+                              class="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-cyan-500 focus:ring-cyan-500"
+                            />
+                          </div>
+                        </div>
+                        <div class="sm:col-span-2">
+                          <div class="flex justify-between">
+                            <label
+                              for="message"
+                              class="block text-sm font-medium text-gray-900"
+                              >Message</label
+                            >
+                            <span id="message-max" class="text-sm text-gray-500"
+                              >Max. 500 characters</span
+                            >
+                          </div>
+                          <div class="mt-1">
+                            <textarea
+                              id="message"
+                              name="message"
+                              rows="4"
+                              class="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-cyan-500 focus:ring-cyan-500"
+                              aria-describedby="message-max"
+                            ></textarea>
+                          </div>
+                        </div>
+                        <div class="sm:col-span-2 sm:flex sm:justify-end">
+                          <button
+                            type="submit"
+                            class="mt-2 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-cyan-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2 sm:w-auto"
+                          >
+                            Submit
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <footer class="bg-white">
+              <div
+                class="mx-auto max-w-7xl py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8"
+              >
+                <div class="flex justify-center space-x-6 md:order-2">
+                  <a href="#" class="text-gray-400 hover:text-gray-500">
+                    <span class="sr-only">Facebook</span>
+                    <svg
+                      class="h-6 w-6"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+
+                  <a href="#" class="text-gray-400 hover:text-gray-500">
+                    <span class="sr-only">Instagram</span>
+                    <svg
+                      class="h-6 w-6"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+
+                  <a href="#" class="text-gray-400 hover:text-gray-500">
+                    <span class="sr-only">Twitter</span>
+                    <svg
+                      class="h-6 w-6"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+                      />
+                    </svg>
+                  </a>
+
+                  <a href="#" class="text-gray-400 hover:text-gray-500">
+                    <span class="sr-only">GitHub</span>
+                    <svg
+                      class="h-6 w-6"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+
+                  <a href="#" class="text-gray-400 hover:text-gray-500">
+                    <span class="sr-only">Dribbble</span>
+                    <svg
+                      class="h-6 w-6"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="mt-8 md:order-1 md:mt-0">
+                  <p class="text-center text-base text-gray-400">
+                    &copy; 2020 Pasley Hill LLC. All rights reserved.
+                  </p>
+                </div>
+              </div>
+            </footer>
+          </main>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="/js/main.js" type="module" defer></script>
+</html>

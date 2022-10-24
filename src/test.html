@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/test.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Hello</h1>
+      <div class="box">Test</div>
+      <div class="box">Test</div>
+      <div class="box">
+        <button id="show-dialog">Show</button>
+      </div>
+    </main>
+
+    <dialog id="dialog-test">
+      <form method="dialog">
+        <p>Stuff</p>
+        <button id="ok-btn" value="default">Ok</button>
+      </form>
+    </dialog>
+  </body>
+</html>
+<script>
+  const favDialog = document.getElementById("dialog-test");
+  const showD = document.getElementById("show-dialog");
+
+  showD.onclick = () => {
+    favDialog.showModal();
+  };
+
+  const hideD = docume.getElementById("ok-btn");
+  hideD.onclick = () => {
+    favDialog.hideModal();
+  };
+</script>

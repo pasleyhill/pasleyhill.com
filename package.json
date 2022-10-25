@@ -7,6 +7,7 @@
     "dev": "snowpack dev",
     "build": "snowpack build",
     "sls": "sls",
+    "s3-deploy": "aws s3 sync ./build s3://pasleyhill.com --acl=public-read --cache-control 'max-age=0' --profile pasley_hill_admin && echo \"Release complete!!\"",
     "staging-s3-deploy": "aws s3 sync ./build s3://staging.pasleyhill.com --acl=public-read --cache-control 'max-age=0' --profile pasley_hill_admin && echo \"Release complete!!\"",
     "staging-deploy": "snowpack build && sls deploy --stage staging && aws s3 sync ./build s3://staging.pasleyhill.com --acl=public-read --cache-control 'max-age=0' --profile pasley_hill_admin && echo \"Release complete!!\"",
     "deploy": "snowpack build && sls deploy --stage prod && aws s3 sync ./build s3://pasleyhill.com --acl=public-read --cache-control 'max-age=0' --profile pasley_hill_admin && echo \"Release complete!!\""

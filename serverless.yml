@@ -6,13 +6,11 @@ plugins:
   - serverless-domain-manager
 
 package:
-  # Directories and files to include in the deployed package
   patterns:
     - backend/**
     - '!.git/**'
     - '!.travis.yml'
-
-#useDotenv: true
+  individually: true
 
 params:
   default:
@@ -23,7 +21,7 @@ params:
     hostedZoneId: Z2FDTNDATAQYW2
     apiPrefix: ${sls:stage}-api
   prod:
-    certArn: arn:aws:acm:us-east-1:474597462976:certificate/a175f878-ffac-4db8-a4c9-8c14e69fcca5
+    certArn: arn:aws:acm:us-east-1:474597462976:certificate/a2d69d63-70ff-4ae7-adcb-1acb4d4f1dbc
     domain: ${self:service}.com
     bucketName: ${self:service}.com
     apiPrefix: api

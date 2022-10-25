@@ -2,6 +2,16 @@ service: pasleyhill
 
 frameworkVersion: '3'
 
+plugins:
+  - serverless-domain-manager
+
+package:
+  # Directories and files to include in the deployed package
+  patterns:
+    - backend/**
+    - '!.git/**'
+    - '!.travis.yml'
+
 #useDotenv: true
 
 params:
@@ -11,15 +21,53 @@ params:
     bucketName: ${sls:stage}.${self:service}.com
     certArn: arn:aws:acm:us-east-1:474597462976:certificate/a175f878-ffac-4db8-a4c9-8c14e69fcca5
     hostedZoneId: Z2FDTNDATAQYW2
+    apiPrefix: ${sls:stage}-api
   prod:
     certArn: arn:aws:acm:us-east-1:474597462976:certificate/a175f878-ffac-4db8-a4c9-8c14e69fcca5
     domain: ${self:service}.com
     bucketName: ${self:service}.com
+    apiPrefix: api
+
+custom:
+  customDomain:
+    domainName: ${param:apiPrefix}.${param:baseDomain}
+    basePath: ""
+    certificateArn: ${param:certArn}
+    createRoute53Record: true
+    createRoute53IPv6Record: true
+    endpointType: REGIONAL
+    securityPolicy: tls_1_2
+    apiType: http
+    autoDomain: false
+    hostedZoneId: Z09269873FNBE6HYXX020
 
 provider:
   name: aws
   profile: pasley_hill_admin
   runtime: nodejs16.x
+  httpApi:
+    cors:
+      allowedMethods:
+        - OPTIONS
+        - POST
+        - GET
+      allowedOrigins:
+        - http://localhost:8080
+        - http://localhost:8081
+        - http://localhost:3001
+        - http://localhost:3000
+        - https://staging.pasleyhill.com
+        - https://pasleyhill.com
+        - https://www.pasleyhill.com
+      allowedHeaders:
+        - content-type
+functions: 
+  contact:
+    handler: backend/main.handler
+    events:
+      - httpApi:
+          method: POST
+          path: /contact
 
 resources:
   Resources:
@@ -80,6 +128,15 @@ resources:
               S3OriginConfig:
                 OriginAccessIdentity: !Sub 'origin-access-identity/cloudfront/${CloudFrontOriginAccessIdentity}'
           PriceClass: 'PriceClass_All'
+    DnsRecord:
+      Type: "AWS::Route53::RecordSet"
+      Properties:
+        AliasTarget:
+          DNSName: !GetAtt 'CloudFrontDistribution.DomainName'
+          HostedZoneId: ${param:hostedZoneId}
+        HostedZoneName: ${param:baseDomain}.
+        Name: ${param:domain}
+        Type: 'A'
     RootBucket:
       Type: AWS::S3::Bucket
       Properties:

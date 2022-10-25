@@ -1,0 +1,98 @@
+service: pasleyhill
+
+frameworkVersion: '3'
+
+#useDotenv: true
+
+params:
+  default:
+    baseDomain: ${self:service}.com
+    domain: ${sls:stage}.${self:service}.com
+    bucketName: ${sls:stage}.${self:service}.com
+    certArn: arn:aws:acm:us-east-1:474597462976:certificate/a175f878-ffac-4db8-a4c9-8c14e69fcca5
+    hostedZoneId: Z2FDTNDATAQYW2
+  prod:
+    certArn: arn:aws:acm:us-east-1:474597462976:certificate/a175f878-ffac-4db8-a4c9-8c14e69fcca5
+    domain: ${self:service}.com
+    bucketName: ${self:service}.com
+
+provider:
+  name: aws
+  profile: pasley_hill_admin
+  runtime: nodejs16.x
+
+resources:
+  Resources:
+    ReadPolicy:
+      Type: 'AWS::S3::BucketPolicy'
+      Properties:
+        Bucket: !Ref RootBucket
+        PolicyDocument:
+          Statement:
+            - Action: 's3:GetObject'
+              Effect: Allow
+              Resource: 'arn:aws:s3:::${param:bucketName}/*'
+              Principal: '*'
+    CloudFrontOriginAccessIdentity:
+      Type: 'AWS::CloudFront::CloudFrontOriginAccessIdentity'
+      Properties:
+        CloudFrontOriginAccessIdentityConfig:
+          Comment: !Ref RootBucket
+    # Configure CloudFront
+    CloudFrontDistribution:
+      Type: 'AWS::CloudFront::Distribution'
+      Properties:
+        DistributionConfig:
+          Aliases:
+            - ${param:domain}
+          DefaultRootObject: index.html
+          ViewerCertificate:
+            AcmCertificateArn: ${param:certArn}
+            SslSupportMethod: sni-only
+          DefaultCacheBehavior:
+            AllowedMethods:
+              - HEAD
+              - DELETE
+              - POST
+              - GET
+              - OPTIONS
+              - PUT
+              - PATCH
+            CachedMethods:
+              - GET
+              - HEAD
+              - OPTIONS
+            Compress: true
+            DefaultTTL: 100 # in seconds
+            ForwardedValues:
+              Cookies:
+                Forward: none
+              QueryString: false
+            MaxTTL: 100 # in seconds
+            MinTTL: 60 # in seconds
+            TargetOriginId: s3origin
+            ViewerProtocolPolicy: 'redirect-to-https'
+          Enabled: true
+          HttpVersion: http2
+          Origins:
+            - DomainName: !GetAtt 'RootBucket.DomainName'
+              Id: s3origin
+              S3OriginConfig:
+                OriginAccessIdentity: !Sub 'origin-access-identity/cloudfront/${CloudFrontOriginAccessIdentity}'
+          PriceClass: 'PriceClass_All'
+    RootBucket:
+      Type: AWS::S3::Bucket
+      Properties:
+        BucketName: ${param:bucketName}
+        AccessControl: PublicRead
+        WebsiteConfiguration:
+          IndexDocument: index.html
+          ErrorDocument: 404.html
+    WWWBucket:
+      Type: AWS::S3::Bucket
+      Properties:
+        BucketName: www.${param:bucketName}
+        AccessControl: BucketOwnerFullControl
+        WebsiteConfiguration:
+          RedirectAllRequestsTo:
+            HostName: !Ref RootBucket

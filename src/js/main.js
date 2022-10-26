@@ -1,4 +1,5 @@
 'use strict';
+import.meta.hot;
 const mCloseMenuBtn = document.getElementById('close-button');
 const mOpenMenuBtn = document.getElementById('open-menu-button');
 const mGetQuoteBtn = document.getElementById('get-a-quote');
@@ -9,7 +10,7 @@ const mContactBtn = document.getElementById('contact-form-btn');
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry);
+        //console.log(entry);
         if(entry.isIntersecting){
             entry.target.classList.add('show-it');
         }else{
@@ -50,4 +51,4 @@ deskMenu.onclick = scrollToClick;
 mobileMenu.onclick = scrollToClick;
 mGetQuoteBtn.onclick = scrollToClick;
 
-console.log('hello world');
+console.log('Variables', { var: __SNOWPACK_ENV__?.SNOWPACK_PUBLIC_API_URL});

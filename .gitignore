@@ -4,3 +4,5 @@
 /build
 .serverless
 .DS_Store
+*/pasley-hill-leads.json
+.env

@@ -1,4 +1,5 @@
 service: pasleyhill
+useDotenv: true
 
 frameworkVersion: '3'
 
@@ -21,7 +22,7 @@ params:
     hostedZoneId: Z2FDTNDATAQYW2
     apiPrefix: ${sls:stage}-api
   prod:
-    certArn: arn:aws:acm:us-east-1:474597462976:certificate/a2d69d63-70ff-4ae7-adcb-1acb4d4f1dbc
+    certArn: arn:aws:acm:us-east-1:474597462976:certificate/0c3922c8-7587-40c3-98ee-a82b4311273a
     domain: ${self:service}.com
     bucketName: ${self:service}.com
     apiPrefix: api

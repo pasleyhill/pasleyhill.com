@@ -2,7 +2,6 @@
  export default {
     mount: {
       src: '/',
-     // public: '/',
     },
    devOptions: {
      tailwindConfig: './tailwind.config.js',

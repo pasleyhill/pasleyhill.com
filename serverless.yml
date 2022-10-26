@@ -63,6 +63,8 @@ provider:
 functions: 
   contact:
     handler: backend/main.handler
+    environment:
+      GOOGLE_RECAPTCHA_SECRET: ${env:GOOGLE_RECAPTCHA_SECRET}
     events:
       - httpApi:
           method: POST

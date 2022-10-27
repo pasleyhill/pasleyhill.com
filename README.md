@@ -19,7 +19,7 @@ Uses Tailwind CSS.
 `npm run build`
 
 # Deployment
-* Requirement: pasley-hill-leads.json with Google service account user credentials added.
+* Requirement: `./backend/pasley-hill-leads.json` with Google service account user credentials added. There is Pasley Hill Web application in the Pasley Hill Google Cloud account.  Getting the service account user set-up, and key.
 * `serverless.yml` contains the infrastructure as code to deploy the S3 bucket, CloudFront set-up, and configuration to the domain name, and this does also create the DNS record. 
 * The domain is managed through Route53 but is actually registered through Google. You'll need to know how to get that ;).
 * For staging deployemtns `npm run staging-deploy` to build, run serverless Cloudformation, and then upload files to S3. 
